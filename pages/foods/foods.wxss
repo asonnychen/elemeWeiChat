@@ -1,0 +1,95 @@
+.food {
+  width: 100%;
+  padding-bottom: 48px;
+  background: #fff; }
+  .food .food-content {
+    position: relative; }
+    .food .food-content .img-header {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 100%; }
+      .food .food-content .img-header image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    .food .food-content .fooddec {
+      padding: 18px;
+      background: #fff; }
+      .food .food-content .fooddec .name {
+        margin: 2px 0 8px 0;
+        height: 14px;
+        line-height: 14px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #07111b; }
+      .food .food-content .fooddec .desc,
+      .food .food-content .fooddec .extra {
+        line-height: 10px;
+        font-size: 10px;
+        color: #666; }
+      .food .food-content .fooddec .desc {
+        margin-bottom: 8px; }
+      .food .food-content .fooddec .extra .count {
+        display: inline-block; }
+      .food .food-content .fooddec .extra .rating {
+        margin-left: 12px;
+        display: inline-block; }
+      .food .food-content .fooddec .price {
+        font-weight: 700;
+        line-height: 24px; }
+        .food .food-content .fooddec .price .now {
+          display: inline-block;
+          margin-right: 8px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #f01414; }
+        .food .food-content .fooddec .price .old {
+          display: inline-block;
+          text-decoration: line-through;
+          font-size: 10px;
+          color: #07111b; }
+    .food .food-content .cartcontrol-warp {
+      position: absolute;
+      bottom: 18px;
+      right: 18px; }
+      .food .food-content .cartcontrol-warp span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        width: 74px;
+        height: 24px;
+        background: #00a0dc;
+        border-radius: 24px;
+        text-align: center;
+        color: #fff;
+        line-height: 26px;
+        font-size: 10px;
+        opacity: 1; }
+      .food .food-content .cartcontrol-warp .cartcontrol {
+        margin-bottom: -5px;
+        margin-right: -10px; }
+  .food .info,
+  .food .ratings {
+    padding: 18px; }
+    .food .info .title,
+    .food .ratings .title {
+      display: block;
+      line-height: 14px;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #07111b;
+      font-weight: 700; }
+    .food .info .text,
+    .food .ratings .text {
+      font-size: 12px;
+      line-height: 24px;
+      color: #666; }
+    .food .info .text-indent,
+    .food .ratings .text-indent {
+      text-indent: 24px; }
+
+/*# sourceMappingURL=foods.wxss.map */

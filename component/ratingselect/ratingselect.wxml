@@ -1,0 +1,36 @@
+<view class="ratingselect">
+  <view class="rating-type">
+    <view class="block positive {{content.length === ratings.length ? 'active':''}}" bindtap="_allContent">全部
+      <text class="count">{{ratings.length}}</text>
+    </view>
+    <view class="block positive {{content.length === recommend ? 'active':''}}" bindtap="_recContent">推荐
+      <text class="count">{{recommend}}</text>
+    </view>
+    <view class="block negative {{content.length === spitslot ? 'active':''}}" bindtap="_spiContent">吐槽
+      <text class="count">{{spitslot}}</text>
+    </view>
+  </view>
+  <view class="switch {{class?'':'on'}}" bindtap="addClass">
+    <text class="iconfont .icon-check-circle"></text>
+    <text class="text">只看有内容的评价</text>
+  </view>
+  <view class="rating-wrap">
+    <block wx:for="{{content}}" wx:key="{{rating}}" wx:for-index="idx" wx:for-item="rating">
+      <view class="item" wx:if="{{class || rating.text}}">
+        <view class="rating-item">
+          <view class="user">
+            <view class="name">{{rating.username}}</view>
+            <image src="{{rating.avatar}}" class="avatar" />
+          </view>
+          <view class="time">{{time[idx]}}</view>
+          <view class="text">
+            <text class="iconfont {{rating.rateType===0 ? 'icon-thumb-up' : 'icon-thumb-down'}}">
+            </text>
+            {{rating.text}}
+          </view>
+        </view>
+      </view>
+    </block>
+    <view wx:if="{{!ratings||content[0].text===''}}" class="no-rating">暂无评价</view>
+  </view>
+</view>

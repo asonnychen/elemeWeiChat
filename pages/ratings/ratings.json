@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "header":"../../component/header/header",
+    "split":"../../component/split/split",
+    "ratingselect":"../../component/ratingselect/ratingselect",
+    "star":"../../component/star/star"
+  },
+  "navigationBarTitleText": "客户评价"
+}

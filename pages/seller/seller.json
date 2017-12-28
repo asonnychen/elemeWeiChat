@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "header":"../../component/header/header",
+    "supports":"../../component/supports/supports",
+    "star":"../../component/star/star",
+    "split":"../../component/split/split"
+  },
+  "navigationBarTitleText": "商家信息"
+}

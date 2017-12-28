@@ -1,0 +1,23 @@
+<view class="cartcontrol">
+  <view class="cartcontrol-warp">
+    <view class="cartcontrol-inner">
+      <text catchtap="count_hide" wx:if="{{foodCount===0}}" class="span">加入购物车</text>
+      <view class="cart-add">
+        <view class="icon">
+          <text catchtap="add_count" class="iconfont icon-add-circle"></text>
+        </view>
+      </view>
+      <view class="cart-count">
+        <text class="count">{{foodCount}}</text>
+      </view>
+      <view class="cart-decrease {{foodCount>0?'on':''}}" animation="{{animateCartAdd}}">
+        <view class="icon">
+          <text catchtap="decrease_count" class="iconfont icon-remove-circle"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<shopcart foods="{{food}}" allCount="{{allCount}}" allSell="{{allSell}}" foodsId="{{foodsId}}" selectFoods="{{foods}}" foodCount="{{foodCount}}"></shopcart>
+
+

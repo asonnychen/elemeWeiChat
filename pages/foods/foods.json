@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "ratingselect":"../../component/ratingselect/ratingselect",
+    "split":"../../component/split/split",
+    "cartcontrol":"../../component/cartcontrol/cartcontrol",
+    "shopcart":"../../component/shopcart/shopcart"
+  },
+  "navigationBarTitleText":"商品信息"  
+}

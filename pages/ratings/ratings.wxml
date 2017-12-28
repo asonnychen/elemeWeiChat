@@ -1,0 +1,37 @@
+<!--pages/ratings/ratings.wxml-->
+<header></header>
+<scroll-view scroll-y="true" scroll-top="0" class="ratings">
+  <view class="ratings-content">
+    <view class="overview">
+      <view class="overview-left">
+        <view class="score">{{seller.score}}</view>
+        <view class="title">综合评分</view>
+        <view class="rank">高于周边商家{{seller.rankRate}}%</view>
+      </view>
+      <view class="overview-right">
+        <view class="score-wrap">
+          <text class="title">服务态度</text>
+          <view class="star-wrap">
+            <star score="{{seller.serviceScore}}" size="15" margin="5"></star>
+          </view>
+          <text class="score">{{seller.serviceScore}}</text>
+        </view>
+        <view class="score-wrap">
+          <text class="title">商品评分</text>
+          <view class="star-wrap">
+            <star score="{{seller.foodScore}}" size="15" margin="5"></star>
+          </view>
+          <text class="score">{{seller.foodScore}}</text>
+        </view>
+        <view class="score-wrap">
+          <text class="title">送货时间</text>
+          <text class="score time">{{seller.deliveryTime}}分钟</text>
+        </view>
+      </view>
+    </view>
+    <split></split>
+    <view class="rating-wrap">
+      <ratingselect ratings="{{ratings}}"></ratingselect>
+    </view>
+  </view>
+</scroll-view>

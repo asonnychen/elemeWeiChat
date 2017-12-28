@@ -1,0 +1,43 @@
+<view class="shopcart">
+  <view class="content">
+    <view class="content-left">
+      <view class="content-wrap">
+        <view class="logo-wrap">
+          <view class="logo {{allCount>0?'highlight':''}}" bindtap="shopcart_show">
+            <text class="icon" aria-hidden="true">
+              <text class="iconfont icon-shopping-cart"></text>
+            </text>
+          </view>
+          <view class="num" wx:if="{{allCount>0}}">{{allCount}}</view>
+        </view>
+        <view class="price {{allSell>0?'highlight':''}}">￥{{allSell}}元</view>
+        <view class="desc">另需配送费￥{{seller.deliveryPrice}}元</view>
+      </view>
+    </view>
+    <view class="content-right">
+      <view class="pay {{pay_class}}">
+        {{pay_desc}}
+      </view>
+    </view>
+  </view>
+  <view class="ball-container">
+    <view wx:for="{{balls}}" wx:key="{{ball}}" wx:for-index="idx" wx:for-item="ball">
+      <view class="ball" wx:if="{{ball.show}}">
+        <view class="inner inner-hook"></view>
+      </view>
+    </view>
+  </view>
+  <view class="shopcart-list {{showShopCar?'active':''}}">
+    <view class="list-header">
+      <view class="title">购物车</view>
+      <text bindtap="clear_shop_car" class="empty">清空</text>
+    </view>
+    <view class="list-content">
+      <view wx:for="{{sellName}}" wx:key="{{unique}}" wx:for-index="idx" wx:for-item="item" class="food">
+        <text class="name">{{sellName[idx]}}</text>
+        <text class="count">单价￥{{nolySellPrice[idx]}}<text class="icon">×</text>{{sellCount[idx]}}份</text>
+        <text class="cartcontrol">合计￥{{sellTotal[idx]}}</text>
+      </view>
+    </view>
+  </view>
+</view>

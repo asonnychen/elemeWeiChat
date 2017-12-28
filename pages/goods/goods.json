@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "header":"../../component/header/header",
+    "star":"../../component/star/star",
+    "supports":"../../component/supports/supports",
+    "cartcontrol":"../../component/cartcontrol/cartcontrol"
+  },
+  "navigationBarTitleText": "商品信息"
+}

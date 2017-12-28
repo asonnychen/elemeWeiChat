@@ -1,0 +1,59 @@
+<!-- header组件 -->
+<view class="header">
+  <view class="content-wrap">
+    <view class="avatar">
+      <image src="{{seller.avatar}}" />
+    </view>
+    <view class="content">
+      <view class="title">
+        <image src="../../image/brand@3x.png" />
+        <text class="name">{{seller.name}}</text>
+      </view>
+      <view class="description">{{seller.description}}/{{seller.deliveryTime}}分钟到达
+      </view>
+      <view class="support">
+        <image class="icon" src="../../image/decrease_2@3x.png" />
+        <text class="text">{{seller.supports[0].description}}</text>
+      </view>
+    </view>
+    <view class="support-count" catchtap="showDetail">
+      <text class="count">{{seller.supports.length}}个</text>
+      <text class="iconfont icon-chevron-right"></text>
+    </view>
+  </view>
+  <view class="bulletin-wrap" catchtap="showDetail">
+    <image class="bulletin-title" src="../../image/bulletin@3x.png" />
+    <text class="bulletin-text">{{seller.bulletin}}</text>
+    <text class="iconfont icon-keyboard_arrow_right"></text>
+  </view>
+  <view class="background">
+    <image src="{{seller.avatar}}" />
+  </view>
+  <view wx:if="{{show}}" class="detail {{detail_class}}">
+    <view class="detail-wrap">
+      <view class="detail-main">
+        <view class="name">{{seller.name}}</view>
+        <view class="star-wrap">
+          <star score="{{score}}" size="20" margin="22"></star>
+        </view>
+        <view class="title">
+          <view class="line"></view>
+          <view class="text">优惠信息</view>
+          <view class="line"></view>
+        </view>
+        <supports seller="{{seller}}" class_map="{{class_map}}"></supports>
+        <view class="title">
+          <view class="line"></view>
+          <view class="text">商家公告</view>
+          <view class="line"></view>
+        </view>
+        <view class="bulletin">
+          <text class="content">{{seller.bulletin}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="detail-close" catchtap="showDetail">
+      <text class="iconfont icon-undo"></text>
+    </view>
+  </view>
+</view>

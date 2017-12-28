@@ -1,0 +1,30 @@
+<view class="food" ref="fooddec">
+  <view class="food-content">
+    <view class="img-header">
+      <image src="{{foods.image}}" alt="" />
+    </view>
+    <view class="fooddec">
+      <view class="name">{{foods.name}}</view>
+      <view class="desc">{{foods.description}}</view>
+      <view class="extra">
+        <text class="count">月售{{foods.sellCount}}份</text>
+        <text class="rating">好评率{{foods.rating}}%</text>
+      </view>
+      <view class="price">
+        <text class="now">￥{{foods.price}}</text>
+        <text class="old" wx:if="{{foods.oldPrice}}">￥{{foods.oldPrice}}</text>
+      </view>
+      <cartcontrol foods="{{foods}}" allSell="{{allSell}}" foodsid="{{foodsId}}"></cartcontrol>
+    </view>
+  </view>
+  <split></split>
+  <view class="info">
+    <text class="title">商品信息</text>
+    <view class="text text-indent">{{foods.info}}</view>
+  </view>
+  <split></split>
+  <view class="ratings">
+    <text class="title">商品评价</text>
+    <ratingselect ratings="{{foods.ratings}}"></ratingselect>
+  </view>
+</view>

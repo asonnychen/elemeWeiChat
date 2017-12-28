@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/goods/goods",
+    "pages/foods/foods",
+    "pages/seller/seller",
+    "pages/ratings/ratings",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "饿了么测试",
+    "navigationBarTextStyle": "#707070"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "selectedColor": "#ea986c",
+    "color": "#707070",
+    "list": [
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "商品",
+        "iconPath": "image/tabBar/shopcar_c.png",
+        "selectedIconPath": "image/tabBar/shopcar.png"
+      },
+      {
+        "pagePath": "pages/seller/seller",
+        "text": "商家",
+        "iconPath": "image/tabBar/seller_c.png",
+        "selectedIconPath": "image/tabBar/seller.png"
+      },
+      {
+        "pagePath": "pages/ratings/ratings",
+        "text": "评论",
+        "iconPath": "image/tabBar/ratings_c.png",
+        "selectedIconPath": "image/tabBar/ratings.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "用户",
+        "iconPath": "image/tabBar/login_c.png",
+        "selectedIconPath": "image/tabBar/login.png"
+      }
+    ]
+  }
+}

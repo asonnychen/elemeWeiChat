@@ -1,0 +1,20 @@
+@import "component/header/header.wxss"; /* 引入header组件样式 */
+@import "component/star/star.wxss"; /* 引入评分组件样式 */
+@import "component/supports/supports.wxss"; /* 引入优惠信息组件样式 */
+@import "component/split/split.wxss"; /* 引入分隔线样式 */
+@import "component/ratingselect/ratingselect.wxss"; /* 引入评价分类样式 */
+@import "component/shopcart/shopcart.wxss"; /* 引入购物车样式 */
+@import "fonts/iconfont.wxss"; /* 引入字体图标 */
+page{
+  height: 100%;
+  background: #ECEDF1;
+  font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+}
+image{
+  width: 100%;
+}
+::-webkit-scrollbar{
+  width:0;
+  height: 0;
+  background: transparent;
+}

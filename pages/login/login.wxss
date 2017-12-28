@@ -1,0 +1,86 @@
+.container {
+  width: 100%;
+  min-height: 100%;
+  font-size: 0; }
+  .container .userinfo {
+    padding: 18px;
+    background: #fd7b01; }
+    .container .userinfo image {
+      display: block;
+      width: 250rpx;
+      height: 250rpx;
+      border-radius: 50%;
+      margin: 0 auto; }
+    .container .userinfo .userinfo-nickname {
+      display: block;
+      text-align: center;
+      font-size: 30rpx;
+      font-weight: 700;
+      margin-top: 10px; }
+  .container .item-wrap {
+    padding: 0 18px;
+    background: #fff; }
+    .container .item-wrap .my-item {
+      display: block;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      vertical-align: middle; }
+      .container .item-wrap .my-item:last-child {
+        border: none; }
+      .container .item-wrap .my-item .title {
+        font-size: 32rpx;
+        font-weight: bold;
+        vertical-align: middle;
+        margin: 10px 0; }
+      .container .item-wrap .my-item .btn-item button {
+        display: inline-block;
+        width: 250rpx;
+        margin: 0 20px; }
+      .container .item-wrap .my-item .score {
+        display: block;
+        float: left;
+        font-size: 32rpx;
+        font-weight: bold;
+        vertical-align: middle;
+        line-height: 60rpx; }
+      .container .item-wrap .my-item .btn {
+        display: block;
+        float: right;
+        width: 250rpx;
+        height: 60rpx;
+        line-height: 60rpx;
+        font-size: 30rpx;
+        vertical-align: middle; }
+      .container .item-wrap .my-item .link {
+        display: block;
+        float: left;
+        font-size: 32rpx;
+        font-weight: bold;
+        vertical-align: middle; }
+  .container .footer {
+    background: #fff;
+    padding: 18px; }
+    .container .footer .about {
+      display: block;
+      font-size: 32rpx;
+      float: left;
+      vertical-align: middle;
+      line-height: 60rpx; }
+    .container .footer .btn {
+      display: block;
+      float: right;
+      width: 250rpx;
+      height: 60rpx;
+      line-height: 60rpx;
+      font-size: 30rpx;
+      vertical-align: middle; }
+
+.clearfix:after {
+  display: block;
+  content: " ";
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/*# sourceMappingURL=login.wxss.map */

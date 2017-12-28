@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "split":"../../component/split/split"
+  },
+  "navigationBarTitleText": "用户信息"
+}

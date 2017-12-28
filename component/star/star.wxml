@@ -1,0 +1,4 @@
+<!--component/star/star.wxml-->
+<view class="star">
+    <image wx:for="{{results}}" wx:key="{{item}}" class="star-item" style="width:{{size}}px;height:{{size}}px;margin-right:{{margin}}px;" src="../../image/star48_{{item}}@3x.png" />
+</view>

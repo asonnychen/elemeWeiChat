@@ -1,0 +1,72 @@
+<!-- 引入头部组件 -->
+<header></header>
+<scroll-view scroll-y="true" scroll-top="0" class="seller">
+  <view class="seller-content">
+    <view class="overview">
+      <view class="title">{{seller.name}}</view>
+      <view class="desc">
+          <star score="{{score}}" margin="10" size="15"></star>
+        <text class="text">({{seller.ratingCount}})</text>
+        <text class="text">月售{{seller.sellCount}}单</text>
+      </view>
+      <view class="remark">
+        <view class="block">
+          <view class="h2">起送价</view>
+          <view class="content">
+            <text class="stress">{{seller.minPrice}}
+              <text class="small">元</text>
+            </text>
+          </view>
+        </view>
+        <view class="block">
+          <view class="h2">商家配送</view>
+          <view class="content">
+            <text class="stress">{{seller.deliveryPrice}}
+              <text class="small">元</text>
+            </text>
+          </view>
+        </view>
+        <view class="block">
+          <view class="h2">平均配送时间</view>
+          <view class="content">
+            <text class="stress">{{seller.deliveryTime}}
+              <text class="small">分钟</text>
+            </text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <split></split>
+    <view class="bulletin">
+      <view class="title">公告与活动</view>
+      <view class="content-wrap">
+        <view class="content">{{seller.bulletin}}</view>
+      </view>
+    </view>
+    <view class="supports-wrap">
+      <supports></supports>
+    </view>
+    <split></split>
+    <view class="pics">
+      <view class="title">商家实景</view>
+      <scroll-view class="scrollx" scroll-x="true">
+        <view class="pics-wrap" style="width:{{count*126}}px;">
+          <block wx:for="{{seller.pics}}" wx:key="{{unique}}" wx:for-index="idx" wx:for-item="item">
+            <image src="{{item}}" class="slide-image" />
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+    <split></split>
+    <view class="infos">
+      <view class="infos-wrap">
+        <view class="title">商家信息</view>
+        <view class="text">
+          <block wx:for="{{seller.infos}}" wx:key="{{unique}}" wx:for-index="idx" wx:for-item="item">
+            <view class="item">{{item}}</view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

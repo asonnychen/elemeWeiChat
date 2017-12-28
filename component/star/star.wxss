@@ -1,0 +1,9 @@
+.star {
+  display: inline-block;
+  font-size: 0; }
+  .star .star-item {
+    display: inline-block;}
+    .star .star-item:last-child {
+      margin: 0; }
+
+/*# sourceMappingURL=star.wxss.map */

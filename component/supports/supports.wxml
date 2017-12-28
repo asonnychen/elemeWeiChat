@@ -1,0 +1,7 @@
+<!--component/supports/supports.wxml-->
+  <view v-if="seller.supports" class="supports">
+    <view class="supports-item" wx:for="{{seller.supports}}" wx:key="{{unique}}" wx:for-index="idx" wx:for-item="item">
+      <image class="icon" src="../../image/{{class_map[seller.supports[idx].type]}}_2@3x.png" />
+      <text class="text">{{seller.supports[idx].description}}</text>
+    </view>
+  </view>

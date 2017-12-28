@@ -1,0 +1,181 @@
+.menu-wrap {
+  display: flex;
+  position: absolute;
+  top: 145px;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu-wrap .left-scroll {
+  flex: 0 0 80px;
+  width: 80px;
+  background: #ddd;
+  border-right: 2px solid #ccc;
+}
+
+.menu-wrap .left-scroll .menu-item {
+  position: relative;
+  display: table;
+  line-height: 16px;
+  height: 39px;
+  width: 100%;
+}
+
+.menu-wrap .left-scroll .menu-item.active {
+  background: #fff;
+  font-weight: 700;
+}
+
+.menu-wrap .left-scroll .menu-item.active .line {
+  border: none;
+}
+
+.menu-wrap .left-scroll .menu-item .item {
+  display: block;
+  padding: 14px 10px 14px;
+  font-size: 28rpx;
+}
+
+.menu-wrap .left-scroll .menu-item .item .icon {
+  display: inline-block;
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 2px;
+}
+
+.menu-wrap .left-scroll .menu-item .line {
+  border-bottom: 1px solid #bbb;
+  position: absolute;
+  width: 56px;
+  left: 50%;
+  margin-left: -28px;
+}
+
+.menu-wrap .left-scroll .menu-item:last-child .line {
+  border: none;
+  bottom: -1px;
+}
+
+.menu-wrap .right-scroll {
+  flex: 1;
+}
+
+.menu-wrap .right-scroll .menu-item {
+  background: #fff;
+  transition: all .5s;
+}
+
+.menu-wrap .right-scroll .menu-item .title {
+  display: block;
+  font-size: 30rpx;
+  color: #333;
+  line-height: 50rpx;
+  border-left: 2px solid #ccc;
+  padding-left: 14px;
+  height: 50rpx;
+  background: #ddd;
+}
+
+.menu-wrap .right-scroll .menu-item .item {
+  padding: 8px;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+
+.menu-wrap .right-scroll .menu-item .item:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+
+.menu-wrap .right-scroll .menu-item .item .gofoods {
+  display: flex;
+}
+
+.menu-wrap .right-scroll .menu-item .item .gofoods .icon {
+  flex: 0 0 140rpx;
+  margin-right: 10px;
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.menu-wrap .right-scroll .menu-item .item .content {
+  position: relative;
+  flex: 1;
+  vertical-align: top;
+}
+
+.menu-wrap .right-scroll .menu-item .item .content .name {
+  display: block;
+  width: 100%;
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #07111b;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.menu-wrap .right-scroll .menu-item .item .content .description {
+  display: block;
+  width: 100%;
+  height: 20rpx;
+  margin: 7px 0;
+  line-height: 20rpx;
+  font-size: 20rpx;
+  color: #666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.menu-wrap .right-scroll .menu-item .item .content .sell-rating {
+  display: block;
+  line-height: 20rpx;
+  height: 20rpx;
+  font-size: 20rpx;
+  color: #666;
+  margin-bottom: 7px;
+}
+
+.menu-wrap .right-scroll .menu-item .item .content .sell-rating .sellCount {
+  display: inline-block;
+}
+
+.menu-wrap .right-scroll .menu-item .item .content .sell-rating .rating {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu-wrap .right-scroll .menu-item .item .content .price {
+  margin-right: 8px;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  font-weight: bold;
+  color: #f01414;
+}
+
+.menu-wrap .right-scroll .menu-item .item .content .price .now {
+  display: inline-block;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #f01414;
+}
+
+.menu-wrap .right-scroll .menu-item .item .content .price .old {
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: line-through;
+  font-size: 20rpx;
+  color: #07111b;
+}
+
+.redirect-navigator-hover {
+  background: #fff;
+}
+
+
+/*# sourceMappingURL=goods.wxss.map */
